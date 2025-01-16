@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text, Button, TextInput, Image, Pressable, TouchableOpacity, StyleSheet } from "react-native";
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
+import { auth } from '@/firebaseConfig';
 
 export default function LoginScreen({ navigation }: { navigation: any }) {
   // const navigation = useNavigation();
@@ -52,7 +52,7 @@ export default function LoginScreen({ navigation }: { navigation: any }) {
 
   const goToRegister = () => {
     handleRestartForm();
-    navigation.navigate('register' as never);
+    navigation.navigate('Register' as never);
   };
 
   const handleRestartForm = () =>{
